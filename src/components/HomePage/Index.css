@@ -1,0 +1,193 @@
+.homepage-container {
+  background-color: #f6f4ee;
+  padding-top: 0px !important;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #132149 0%, #4621b6 100%);
+  color: #f3f3f3;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+.hero-icon {
+  background: linear-gradient(135deg, #6a42ec 0%, #68c1fc 100%);
+  width: 100px;
+  height: 96px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  color: #8aa4ff;
+  margin-bottom: 16px;
+  font-weight: 600;
+  max-width: 600px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+/* .hero-subtitle span {
+  color: #b787f9;
+} */
+
+.hero-description {
+  font-size: 1.3rem;
+  color: #d1d5db;
+  margin-bottom: 10px;
+  max-width: 500px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.hero-detail {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  max-width: 600px;
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 700px;
+  width: 90%;
+  padding: 40px 0;
+}
+
+.card {
+  background-color: rgba(31, 41, 55, 0.5);
+  border-radius: 12px;
+  padding: 30px;
+  width: 110%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 1px solid #f3f3f9;
+}
+
+.card .icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* .icon.blue {
+  color: #3b82f6;
+}
+
+.icon.purple {
+  color: #a855f7;
+}
+
+.icon.green {
+  color: #10b981;
+} */
+
+.blue {
+  color: rgb(96 165 250);
+  font-size: 30px;
+}
+
+.orange {
+  color: rgb(251 191 36);
+  font-size: 30px;
+}
+
+.card h3 {
+  margin: 10px 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+.cta-button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+}
+
+.stats-section {
+  text-align: center;
+  color: #ccc;
+}
+
+.stats-subtext {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.line {
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat {
+  min-width: 100px;
+  margin-bottom: 30px;
+}
+
+.text-course {
+  color: #9ca3af;
+}
