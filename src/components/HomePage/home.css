@@ -1,6 +1,6 @@
 .homepage-container {
   background-color: #f6f4ee;
-  padding-top: 0px !important;
+
   padding: 20px;
   height: 100vh;
   overflow-y: auto;
@@ -94,6 +94,10 @@
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
 }
 
 .card:hover {
@@ -101,28 +105,20 @@
   border: 1px solid #f3f3f9;
 }
 
-.card .icon {
+.icons-circle {
   font-size: 28px;
   margin-bottom: 16px;
-  display: inline-block;
   padding: 12px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .icon.blue {
-  color: #3b82f6;
-}
-
-.icon.purple {
-  color: #a855f7;
-}
-
-.icon.green {
-  color: #10b981;
-} */
-
-.blue {
+.blues {
   color: rgb(96 165 250);
   font-size: 30px;
 }

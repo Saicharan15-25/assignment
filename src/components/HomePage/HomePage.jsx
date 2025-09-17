@@ -1,9 +1,14 @@
-import "./Index.css";
-import { Link } from "react-router-dom";
+import "./home.css";
+import { Link, useNavigate } from "react-router-dom";
 import { VscDebugStart } from "react-icons/vsc";
 import Header from "../Header/Header";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const handlestartClick = (event) => {
+    event.preventDefault();
+    navigate("/assignment");
+  };
   return (
     <>
       {/* <Header /> */}
@@ -27,7 +32,7 @@ const HomePage = () => {
           </p>
           <div className="container">
             <div className="card">
-              <div className="icon blue">⚡</div>
+              <div className="icons-circle">⚡</div>
               <h3>Intelligent Assessment</h3>
               <p>
                 Advanced questionnaire that adapts to your specific business and
@@ -36,7 +41,7 @@ const HomePage = () => {
             </div>
 
             <div className="card">
-              <div className="icon purple">🛡️</div>
+              <div className="icons-circle">🛡️</div>
               <h3>Enterprise-Grade Solutions</h3>
               <p>
                 Comprehensive architecture recommendations with security,
@@ -45,7 +50,7 @@ const HomePage = () => {
             </div>
 
             <div className="card">
-              <div className="icon green">🌐</div>
+              <div className="icons-circle">🌐</div>
               <h3>Business & Technical Views</h3>
               <p>
                 Dual perspectives providing both strategic business insights and
@@ -53,7 +58,7 @@ const HomePage = () => {
               </p>
             </div>
             <Link to="/assignment">
-              <button className="cta-button">
+              <button className="cta-button" onClick={handlestartClick}>
                 <VscDebugStart /> Start Your Journey
               </button>
             </Link>

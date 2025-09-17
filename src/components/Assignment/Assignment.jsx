@@ -1,4 +1,4 @@
-import "./Index.css";
+import "./Assignment.css";
 
 import React, { useState } from "react";
 import AssignmentList from "./AssignmentList";
@@ -140,7 +140,7 @@ const Assignment = () => {
   return (
     <>
       {/* <Header /> */}
-      <div className="homepagescontainer">
+      <div className="homepagescontainers">
         <div className="assignment-container">
           <div className="progress-card">
             <h2 className="progress-title">Assessment in Progress</h2>

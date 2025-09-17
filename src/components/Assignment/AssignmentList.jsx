@@ -1,5 +1,5 @@
 import React from "react";
-import "./Index.css";
+import "./Assignment.css";
 
 const AssignmentList = ({
   questions,
@@ -38,19 +38,20 @@ const AssignmentList = ({
   };
 
   return (
-    <div className="cards">
-      <h2>{questions[selectedQuestion].text}</h2>
+    <div className="assignment-cards">
+      <h2 className="labels-title-question">{questions[selectedQuestion].text}</h2>
       <ul>
         {questions[selectedQuestion].options.map((option, index) => (
           <li key={index} className="checkbox-item">
             <input
+            className="inputs"
               type="checkbox"
               id={`option-${index}`}
               checked={selectedOptions.includes(option)}
               onChange={() => handleCheckboxChange(option)}
             />
 
-            <label htmlFor={`option-${index}`}>{option}</label>
+            <label className="labels" htmlFor={`option-${index}`}>{option}</label>
           </li>
         ))}
       </ul>
